@@ -1,20 +1,21 @@
 import React from 'react'
 import AppBar from '@material-ui/core/AppBar'
-import { useHeaderState } from '../../context/Header'
+import { useState } from '../../context/State'
 
 const Header = _ => {
 
-  const { headerText } = useHeaderState()
+  const { headerText } = useState()
 
   return (
     <AppBar position='static'>
-      <div style={HeaderStyle}>{headerText}</div>
+      <div style={StateStyle}>{headerText}</div>
     </AppBar>
   )
 }
 
 export default Header
 
-const HeaderStyle = {
-  height: '60px'
+const StateStyle = {
+  height: '60px',
+  color: 'white'
 }

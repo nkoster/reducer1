@@ -2,15 +2,15 @@ import React from 'react'
 import './App.css'
 import Header from './components/Header'
 import Main from './components/Main'
-import { HeaderProvider } from './context/Header'
+import { StateProvider } from './context/State'
 
 const App = () => {
   return (
     <div className='App'>
-      <HeaderProvider>
+      <StateProvider>
         <Header />
         <Main />
-      </HeaderProvider>
+      </StateProvider>
     </div>
   )
 }

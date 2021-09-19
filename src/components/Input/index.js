@@ -1,12 +1,12 @@
 import React from 'react'
 import Card from '@material-ui/core/Card'
 import TextField from '@material-ui/core/TextField'
-import { useHeaderDispatch, useHeaderState, updateHeader } from '../../context/Header'
+import { useStateDispatch, useState, updateHeader } from '../../context/State'
 
 const Input = _ => {
 
-  const dispatch = useHeaderDispatch()
-  const { headerText } = useHeaderState()
+  const dispatch = useStateDispatch()
+  const { headerText } = useState()
 
   const updateInput = evt => {
     updateHeader(dispatch, evt.target.value)
@@ -29,7 +29,7 @@ const Input = _ => {
 export default Input
 
 const InputStyle = {
-  width: '500px'
+  // width: '500px'
 }
 
 const CardStyle = {

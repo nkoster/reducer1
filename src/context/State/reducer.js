@@ -2,7 +2,7 @@ export const initialState = {
   headerText: ''
 }
 
-export const HeaderReducer = (initialState, action) => {
+export const StateReducer = (initialState, action) => {
   console.log('DISPATCH', action.type)
   switch (action.type) {
     case 'updateHeader':
