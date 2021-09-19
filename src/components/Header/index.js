@@ -8,14 +8,14 @@ const Header = _ => {
 
   return (
     <AppBar position='static'>
-      <div style={StateStyle}>{headerText}</div>
+      <div style={HeaderStyle}>{headerText || 'HEADER'}</div>
     </AppBar>
   )
 }
 
 export default Header
 
-const StateStyle = {
+const HeaderStyle = {
   height: '60px',
   color: 'white'
 }
