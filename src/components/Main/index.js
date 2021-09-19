@@ -14,7 +14,6 @@ export default Main
 const MainStyle = {
   marginTop: '10px',
   border: '0px solid red',
-  height: 'calc(100vh - 100px)',
-  padding: '10px',
+  padding: '30px',
   display: 'flex'
 }
