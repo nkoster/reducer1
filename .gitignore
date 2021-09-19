@@ -1,2 +1,7 @@
 node_modules
 build
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/reducer1.iml
+/.idea/vcs.xml
