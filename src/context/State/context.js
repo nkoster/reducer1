@@ -4,18 +4,18 @@ import { StateReducer, initialState } from './reducer'
 const StateContext = createContext()
 const StateDispatchContext = createContext()
 
-export const useState = _ => {
+export const State = _ => {
   const context = useContext(StateContext)
   if (!context) {
-    throw new Error('useState must be a child of StateProvider')
+    throw new Error('State must be a child of StateProvider')
   }
   return context
 }
 
-export const useStateDispatch = _ => {
+export const StateDispatch = _ => {
   const context = useContext(StateDispatchContext)
   if (!context) {
-    throw new Error('useStateDispatch must be a child of StateProvider')
+    throw new Error('StateDispatch must be a child of StateProvider')
   }
   return context
 }

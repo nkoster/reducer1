@@ -1,10 +1,10 @@
 import React from 'react'
 import AppBar from '@material-ui/core/AppBar'
-import { useState } from '../../context/State'
+import { State } from '../../context/State'
 
 const Header = _ => {
 
-  const { headerText } = useState()
+  const { headerText } = State()
 
   return (
     <AppBar position='static'>

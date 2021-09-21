@@ -1,12 +1,12 @@
 import React from 'react'
 import Card from '@material-ui/core/Card'
 import TextField from '@material-ui/core/TextField'
-import { useStateDispatch, useState, updateHeader } from '../../context/State'
+import { StateDispatch, State, updateHeader } from '../../context/State'
 
 const Input = _ => {
 
-  const dispatch = useStateDispatch()
-  const { headerText } = useState()
+  const dispatch = StateDispatch()
+  const { headerText } = State()
 
   const updateInput = evt => {
     updateHeader(dispatch, evt.target.value)

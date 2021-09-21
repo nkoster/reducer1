@@ -1,4 +1,4 @@
 import { updateHeader } from './actions'
-import { StateProvider, useStateDispatch, useState } from './context'
+import { StateProvider, StateDispatch, State } from './context'
 
-export { StateProvider, useStateDispatch, useState, updateHeader }
+export { StateProvider, StateDispatch, State, updateHeader }
