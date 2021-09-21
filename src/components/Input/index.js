@@ -20,6 +20,7 @@ const Input = _ => {
           label='Input'
           variant='outlined'
           onChange={updateInput}
+          style={InputStyle}
         />
       </Card>
     </div>
@@ -29,9 +30,10 @@ const Input = _ => {
 export default Input
 
 const InputStyle = {
-  // width: '500px'
+  width: '100%'
 }
 
 const CardStyle = {
+  margin: '10px',
   padding: '20px'
 }
