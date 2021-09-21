@@ -5,6 +5,8 @@ const Main = _ => {
   return (
     <div style={MainStyle}>
       <Input />
+      <Input />
+      <Input />
     </div>
   )
 }
@@ -15,5 +17,6 @@ const MainStyle = {
   marginTop: '10px',
   border: '0px solid red',
   padding: '30px',
-  display: 'flex'
+  display: 'flex',
+  justifyContent: 'center'
 }
