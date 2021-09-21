@@ -8,7 +8,7 @@ const Header = _ => {
 
   return (
     <AppBar position='static'>
-      <div style={HeaderStyle}>{headerText || 'HEADER'}</div>
+      <h2 style={HeaderStyle}>{headerText || 'HEADER'}</h2>
     </AppBar>
   )
 }
@@ -16,6 +16,8 @@ const Header = _ => {
 export default Header
 
 const HeaderStyle = {
-  height: '60px',
-  color: 'white'
+  color: 'white',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center'
 }
